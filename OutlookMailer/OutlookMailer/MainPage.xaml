@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OutlookMailer.MainPage">
+
+    <StackLayout Padding="16">
+        <Label Text="Sender"
+               FontSize="24"
+               FontAttributes="Bold" />
+        <Entry x:Name="userName"
+               Placeholder="Your name" />
+        <Entry x:Name="userEmail"
+               Placeholder="Your mail" />
+        <Entry x:Name="userEmailPassword"
+               Placeholder="Your email password" />
+
+        <Label Text="Reciepient"
+               FontSize="24"
+               FontAttributes="Bold" />
+        <Entry x:Name="receiverEmail"
+               Placeholder="Receiver email" />
+        <Entry x:Name="receiverName"
+               Placeholder="Receiver name" />
+
+        <Label Text="Message"
+               FontSize="24"
+               FontAttributes="Bold" />
+        <Entry x:Name="messageSubject"
+               Placeholder="Subject" />
+        <Editor x:Name="messageBody"
+                Placeholder="Body"
+                AutoSize="TextChanges" />
+
+        <Button Text="SEND"
+                Clicked="Button_Clicked"
+                FontAttributes="Bold" />
+
+        <Label Text="- Has to be an outlook email"/>
+        <Label Text="- Password is the oulook email account password"/>
+        <Label Text="- Trim spaces"/>
+    </StackLayout>
+
+</ContentPage>
